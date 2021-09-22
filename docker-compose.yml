@@ -1,0 +1,37 @@
+version: '3.1'
+
+services:
+
+  wp:
+    depends_on:
+      - db
+    image: wordpress:latest
+    restart: always
+    ports:
+      - 8044:80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - ./public:/var/www/html/
+    working_dir: /var/www/html
+
+  cli:
+    image: wordpress:cli
+    volumes:
+      - ./public:/var/www/html/
+
+  db:
+    image: mariadb:latest
+    restart: always
+    ports:
+      - 33050:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: wordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    volumes:
+      - ./.db:/var/lib/mysql
