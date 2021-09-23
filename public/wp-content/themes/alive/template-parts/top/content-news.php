@@ -14,6 +14,8 @@ $employments = get_posts([
     'status' => 'publish',
     'category' => get_category_by_slug('employment')->term_id
 ]);
+$page_for_posts = get_option( 'page_for_posts' );
+
 ?>
 <section class="top__section top__section_news">
     <div class="top__inner-parent">
@@ -82,7 +84,7 @@ $employments = get_posts([
                     <?php endforeach; wp_reset_postdata();?>
                 </ul>
             </div>
-            <p class="news__button"><a href="" class="button button_color_black">VIEW MORE</a></p>
+            <p class="news__button"><a href="<?=get_permalink($page_for_posts)?>" class="button button_color_black">VIEW MORE</a></p>
         </div>
     </div>
 </section>

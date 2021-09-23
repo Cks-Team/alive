@@ -1,5 +1,4 @@
 <?php
-add_editor_style(get_stylesheet_directory_uri() . '/assets/application.css');
 add_editor_style(get_stylesheet_directory_uri() . '/lib/css/style.min.css');
 function global_navs()
 {
@@ -81,5 +80,24 @@ function footer_navs()
         ],
     ];
 }
+function mail_from_name()
+{
+    return '「Alive」';
+}
+add_filter('wp_mail_from_name', 'mail_from_name');
 
+function send_notification($data)
+{
+    $headers = array('Content-Type: text/html; charset=UTF-8');
+    $mail = $data['mail'];
+    $subject = "Contact |お問い合わせ";
+    $messages  = "●お名前:  " . $data['name']."<br>";
+    $messages .= "●ふりがな: " . $data['furigana']."<br>";
+    $messages .= "●メールアドレス: " . $data['mail']."<br>";
+    $messages .= "●電話番号: " . $data['tel']."<br>";
+    $messages .= "●お問い合わせ種類: " . $data['kind']."<br>";
+    $messages .= "●内容: " . $data['message']."<br>";
+    return wp_mail($mail, $subject, $messages, $headers);
+
+}
 ?>
