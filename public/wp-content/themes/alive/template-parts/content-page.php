@@ -11,7 +11,7 @@
 <main class="<?= get_post_field('post_name'); ?>">
     <!-- lower-head -->
     <section class="lower-head js-slide-image-trigger">
-        <div class="lower-head__parent lower-head__parent_business">
+        <div class="lower-head__parent lower-head__parent_<?= get_post_field('post_name'); ?>">
             <div class="lower-head__heading-area">
                 <div class="lower-head__heading-item is-slide-item">
                     <div class="is-slide-cover"></div>

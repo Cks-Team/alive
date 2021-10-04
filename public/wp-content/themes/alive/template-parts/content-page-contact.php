@@ -114,9 +114,10 @@ if($status){
                                     <select name="contact_data[kind]" class="contact__form-input contact__form-input_select js-required" data-required-error="必須項目です" required="" <?= $is_confirm ? "disabled" : ""?>
                                         <optgroup>
                                             <option value="" selected="" disabled="">お問い合わせ種類を選択してください</option>
-                                            <option value="1" <?= ($is_confirm && $data['kind'] == "1") ? 'selected' : ''?>>1</option>
-                                            <option value="2" <?= ($is_confirm && $data['kind'] == "2") ? 'selected' : ''?>>2</option>
-                                            <option value="3" <?= ($is_confirm && $data['kind'] == "3") ? 'selected' : ''?>>3</option>
+                                            <option value="ALIVEについて" <?= ($is_confirm && $data['kind'] == "ALIVEについて") ? 'selected' : ''?>>ALIVEについて</option>
+                                            <option value="採用について" <?= ($is_confirm && $data['kind'] == "採用について") ? 'selected' : ''?>>採用について</option>
+                                            <option value="パートナー契約について" <?= ($is_confirm && $data['kind'] == "パートナー契約について") ? 'selected' : ''?>>パートナー契約について</option>
+                                            <option value="その他" <?= ($is_confirm && $data['kind'] == "その他") ? 'selected' : ''?>>その他</option>
                                         </optgroup>
                                     </select>
                                 </label>
