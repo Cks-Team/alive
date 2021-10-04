@@ -16,15 +16,15 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="Keywords" content="">
+    <meta name="description" content="株式会社ALIVE 皆が生き生きと。全ては笑顔のために。">
+    <meta name="Keywords" content="株式会社ALIVE">
     <!-- title -->
-    <title>Alive</title>
+    <title>株式会社ALIVE</title>
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="">
     <link rel="icon" type="image/png" sizes="32x32" href="">
-    <link rel="icon" type="image/png" sizes="16x16" href="">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://alivecorporation.co.jp/wp-content/uploads/2021/09/Group-79@2x.png">
 
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#ffffff">

@@ -1281,6 +1281,7 @@ button.swiper-pagination-bullet {
     z-index: 1;
     text-align: center;
 }
+
 .intro .intro__area img{
     width: 300px;
     margin: auto;
@@ -1291,6 +1292,11 @@ button.swiper-pagination-bullet {
         left: 0;
         top: 138px
     }
+
+	.intro .intro__area img{
+		width: 100px;
+		margin: auto;
+	}
 }
 
 .intro .intro__key-heading {
@@ -1689,7 +1695,7 @@ button.swiper-pagination-bullet {
 }
 
 .lower-head .lower-head__parent_about {
-    background: url(images/common/lowerhead/detailvisual_aboutus.png) no-repeat center center;
+    background: url(images/common/lowerhead/detailvisual_aboutus.jpeg) no-repeat center center;
     background-size: cover
 }
 
@@ -1897,7 +1903,7 @@ button.swiper-pagination-bullet {
 }
 
 .header .header__heading {
-    width: 100px;
+    width: 140px;
     height: auto;
     margin-left: 80px
 }
@@ -2533,7 +2539,8 @@ button.swiper-pagination-bullet {
     .top .top__section_recruit .top__inner-item:nth-of-type(1) {
         width: 90%;
         margin-top: -60px;
-        margin-left: 40px
+        margin-left: 40px;
+        padding: 15px;
     }
 }
 
@@ -3045,7 +3052,8 @@ button.swiper-pagination-bullet {
     font-size: 16px;
     font-size: 16px;
     font-size: 1.6rem;
-    font-weight: 300
+    font-weight: 300;
+    text-align: center;
 }
 
 
@@ -3876,7 +3884,8 @@ button.swiper-pagination-bullet {
     border-right: 0.5px solid #7C7C7C;
     padding: 30px;
     font-size: 25px;
-    font-family: 'Yu Mincho', Verdana, Meiryo, sans-serif!important
+    font-family: 'Yu Mincho', Verdana, Meiryo, sans-serif!important;
+	color: #000000;
 }
 .w3-bar .w3-bar-item.w3-red{
     background: #D03015;
