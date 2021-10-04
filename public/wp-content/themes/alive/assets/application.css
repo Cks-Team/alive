@@ -1277,8 +1277,13 @@ button.swiper-pagination-bullet {
     top: 45%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    left: 80px;
-    z-index: 1
+    /*left: 80px;*/
+    z-index: 1;
+    text-align: center;
+}
+.intro .intro__area img{
+    width: 300px;
+    margin: auto;
 }
 
 @media (max-width:749px) {
