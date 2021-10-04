@@ -47,6 +47,9 @@ get_header();
                     <div class="news__content">
                         <?php the_content();?>
                     </div>
+                    <div class="news__back-button-area">
+                        <a href="<?=get_permalink(get_option( 'page_for_posts' ))?>" class="news__back-button">一覧へ戻る</a>
+                    </div>
                 </div>
             </div>
         </section>
