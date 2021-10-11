@@ -24,7 +24,7 @@
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="">
     <link rel="icon" type="image/png" sizes="32x32" href="">
-    <link rel="icon" type="image/png" sizes="16x16" href="http://alivecorporation.co.jp/wp-content/uploads/2021/09/Group-79@2x.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="">
 
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#ffffff">
